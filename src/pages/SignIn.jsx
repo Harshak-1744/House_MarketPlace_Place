@@ -50,6 +50,15 @@ function SignIn(){
                         <Link to='/forgot-password' className='forgotPasswordLink'>
                             Forgot Passowrd
                         </Link>
+
+                        <div className="signInBar">
+                            <p className="signInText">
+                                Sign In
+                            </p>
+                            <button className="signInButton">
+                                <ArrowRightIcon  fill='#ffffff' width='30px' height='30px'/>
+                            </button>
+                        </div>
                     </form>
                 </main>
             </div>
