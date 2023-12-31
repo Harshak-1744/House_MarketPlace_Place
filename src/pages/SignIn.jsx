@@ -29,7 +29,6 @@ function SignIn(){
                     </p>
                 </header>
 
-                <main>
                     <form>
                         <input type="email" className="emailInput"  placeholder='Email' id='email' value={email}
                             onChange={onChange}
@@ -60,7 +59,10 @@ function SignIn(){
                             </button>
                         </div>
                     </form>
-                </main>
+                {/*OAuth*/}
+                <Link to='/sign-up' className='registerLink'>
+                    Sign Up Instead
+                </Link>
             </div>
         </>
     )
