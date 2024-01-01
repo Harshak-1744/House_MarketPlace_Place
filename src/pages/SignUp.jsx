@@ -35,11 +35,10 @@ function SignUp(){
                 </header>
 
                     <form>
-                        <input type="text" className="nameInput"  placeholder='Name' id='name' value={name}
+                        <input type="name" className="nameInput"  placeholder='Name' id='name' value={name}
                             onChange={onChange}
                         
                         />
-
 
                         <input type="email" className="emailInput"  placeholder='Email' id='email' value={email}
                             onChange={onChange}
@@ -66,13 +65,13 @@ function SignUp(){
                                 Sign Up
                             </p>
                             <button className="signUpButton">
-                                <ArrowRightIcon  fill='#ffffff' width='34px' height='34px'/>
+                                <ArrowRightIcon  fill='#ffffff' width='30px' height='30px'/>
                             </button>
                         </div>
                     </form>
                 {/*OAuth*/}
                 <Link to='/sign-in' className='registerLink'>
-                    Sign In Instead
+                    Sign Up Instead
                 </Link>
             </div>
         </>
