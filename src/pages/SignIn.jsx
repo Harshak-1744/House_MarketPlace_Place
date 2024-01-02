@@ -25,7 +25,7 @@ function SignIn(){
 
 
     return (
-        <>
+        <div>
             <div className="pageContainer">
                 <header>
                     <p className="pageHeader">
@@ -68,7 +68,7 @@ function SignIn(){
                     Sign Up Instead
                 </Link>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -13,7 +13,7 @@ function SignUp(){
         email: '',
         password: ''
     })
-    const {name,email,password} = formData
+    const { name,email,password } = formData
 
 
     const navigate = useNavigate()
@@ -26,7 +26,7 @@ function SignUp(){
 
 
     return (
-        <>
+        <div>
             <div className="pageContainer">
                 <header>
                     <p className="pageHeader">
@@ -35,9 +35,8 @@ function SignUp(){
                 </header>
 
                     <form>
-                        <input type="name" className="nameInput"  placeholder='Name' id='name' value={name}
+                        <input type="text" className="nameInput"  placeholder='Name' id='email' value={name}
                             onChange={onChange}
-                        
                         />
 
                         <input type="email" className="emailInput"  placeholder='Email' id='email' value={email}
@@ -70,11 +69,11 @@ function SignUp(){
                         </div>
                     </form>
                 {/*OAuth*/}
-                <Link to='/sign-in' className='registerLink'>
-                    Sign Up Instead
+                <Link to='/sign-in' className='SignUpregisterLink'>
+                    Sign In Instead
                 </Link>
             </div>
-        </>
+        </div>
     )
 }
 
