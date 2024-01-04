@@ -3,6 +3,7 @@ import { getFirestore } from "firebase/firestore";
 
 
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyA-ClnvgwjPTnnI6aOPuZtf8q01B5mVvvE",
   authDomain: "house-marketplace-app-3ad3c.firebaseapp.com",

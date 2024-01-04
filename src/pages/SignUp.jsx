@@ -45,8 +45,6 @@ function SignUp(){
         }
         
     }
-
-
     return (
         <div>
             <div className="pageContainer">
