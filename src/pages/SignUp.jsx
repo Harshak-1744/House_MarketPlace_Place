@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import {Link,useNavigate} from 'react-router-dom'
 import {getAuth, createUserWithEmailAndPassword, updateProfile} from 'firebase/auth'
+import { setDoc, doc, serverTimestamp } from 'firebase/firestore'
 import { db } from '../firebase.config'
 
 import {ReactComponent as ArrowRightIcon}  from '../assets/svg/keyboardArrowRightIcon.svg'
@@ -38,6 +39,8 @@ function SignUp(){
             );
         
             await updateProfile(auth.currentUser, { displayName: name });
+
+            const formDataCopy = {...formData}
         
             navigate('/');
         } catch (error) {
