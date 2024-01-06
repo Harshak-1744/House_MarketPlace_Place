@@ -51,7 +51,9 @@ function Profile(){
                 </p>
             </div>
         </main>
-        
+        <form>
+            <input type="text" id="name" className={!changeDetails ? "profileName" : "profileNameActive"}/>
+        </form>
         </div>
 }
 
