@@ -15,11 +15,14 @@ function ListingItem({listing, id}){
           <p className="caregoryLisitngName">{listing.name}</p>
 
           <p className="categoryLisitingPrice">
-            ${listing.offer 
+            $
+            {listing.offer 
             ? listing.discountedPrice
                   .toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') 
             : listing.regularPrice
                   .toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+            {listing.type === 'rent'}
+
           </p>
         </div>
       </Link>
