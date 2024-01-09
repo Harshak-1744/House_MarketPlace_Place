@@ -130,7 +130,7 @@ function Offers() {
           )}
         </>
       ) : (
-        <p>No listings for {params.categoryName}</p>
+        <p>There are no Current Offers</p>
       )}
     </div>
   )
