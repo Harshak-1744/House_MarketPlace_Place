@@ -12,6 +12,7 @@ function ListingItem({listing, id}){
           <p className="categoryListingLocation">
             {listing.location}
           </p>
+          
           <p className="caregoryLisitngName">{listing.name}</p>
 
           <p className="categoryLisitingPrice">
