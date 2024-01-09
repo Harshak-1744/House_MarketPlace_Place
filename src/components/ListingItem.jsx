@@ -7,10 +7,13 @@ function ListingItem({lisitng, id}){
   return (
     <li className='categoryListing'>
       <Link to={`/category/${lisitng.type}/${id}`} className='categoryListingLink'>
-        <img src={lisitng.imgUrls[0]} alt={lisitng.name} className='categoryListing' />
+        <img src={lisitng.imgUrls[0]} alt={lisitng.name} className='categoryListingImg' />
       </Link>
     </li>
   )
 }
 
 export default ListingItem
+
+
+
