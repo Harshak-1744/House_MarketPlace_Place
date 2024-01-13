@@ -169,7 +169,7 @@ function EditListing() {
                 console.log('Upload is running')
                 break
               default:
-                break
+                break 
             }
           },
           (error) => {
